@@ -1,44 +1,24 @@
-import logo from "./logo.svg";
 import React, { Component } from "react";
+import Pixel from "./components/pixel";
 import "./App.css";
 
 function App() {
   let w = 100;
   return (
-    <React.Fragment>
-      <div>
-        <div
-          style={{
-            display: "inline-block",
-            margin: 0,
-            height: w,
-            width: w,
-            backgroundColor: "blue",
-          }}
-          className="App"
-        ></div>
-        <div
-          style={{
-            display: "inline-block",
-            margin: 0,
-            height: w,
-            width: w,
-            backgroundColor: "red",
-          }}
-          className="App"
-        ></div>
-        <div
-          style={{
-            padding: 0,
-            margin: 0,
-            height: w,
-            width: w,
-            backgroundColor: "red",
-          }}
-          className="App"
-        ></div>
-      </div>
-    </React.Fragment>
+    <div
+      style={{
+        width: 1000,
+        hieght: 500,
+        backgroundColor: "yellow",
+        display: "flex",
+      }}
+    >
+      <Pixel color={"red"} />
+      <Pixel color={"blue"} />
+      <Pixel color={"green"} />
+      <Pixel color={"pink"} />
+      <Pixel color={"brown"} />
+    </div>
   );
 }
 
