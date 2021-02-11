@@ -11,8 +11,25 @@ function App() {
         hieght: 500,
         backgroundColor: "yellow",
         display: "flex",
+        flexWrap: "wrap",
       }}
     >
+      <Pixel color={"red"} />
+      <Pixel color={"blue"} />
+      <Pixel color={"green"} />
+      <Pixel color={"pink"} />
+      <Pixel color={"brown"} />
+      <Pixel color={"brown"} />
+      <Pixel color={"red"} />
+      <Pixel color={"blue"} />
+      <Pixel color={"green"} />
+      <Pixel color={"pink"} />
+      <Pixel color={"brown"} />
+      <Pixel color={"red"} />
+      <Pixel color={"blue"} />
+      <Pixel color={"green"} />
+      <Pixel color={"pink"} />
+      <Pixel color={"brown"} />
       <Pixel color={"red"} />
       <Pixel color={"blue"} />
       <Pixel color={"green"} />
