@@ -4,7 +4,6 @@ class Pixel extends Component {
   render() {
     //const { color } = this.props;
     let w = 100;
-    console.log(this.props);
     return (
       <div
         style={{
