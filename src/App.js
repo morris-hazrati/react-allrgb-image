@@ -22,18 +22,19 @@ class App extends Component {
     return (
       <div
         style={{
-          width: 400,
-          hieght: 500,
+          width: 256,
+          hieght: 128,
           backgroundColor: "yellow",
           display: "flex",
           flexWrap: "wrap",
         }}
       >
-        <Pixel color={formatColor({ r: 255, g: 0, b: 0 })} />
-        <Pixel color={formatColor({ r: 255, g: 0, b: 0 })} />
-        <Pixel color={formatColor({ r: 255, g: 0, b: 0 })} />
-        <Pixel color={formatColor({ r: 255, g: 0, b: 0 })} />
-        <Pixel color={formatColor({ r: 255, g: 0, b: 0 })} />
+        {this.state.colors.map((color) => (
+          <Pixel
+            key={this.state.colors.indexOf(color)}
+            color={formatColor(color)}
+          />
+        ))}
       </div>
     );
   }
