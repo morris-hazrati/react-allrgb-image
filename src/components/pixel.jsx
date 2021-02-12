@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Pixel extends Component {
   render() {
     //const { color } = this.props;
-    let w = 100;
+    let w = 50;
     return (
       <div
         style={{
