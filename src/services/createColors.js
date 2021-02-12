@@ -1,9 +1,24 @@
-const colors = [];
+// This service function will create an array of 32768 RGB color objects
+// Each color object has the format of { r : 8 , g : 256 , b : 8}
 
-for (let r = 1; r < 32; r++) {
-  for (let g = 0; g < 32; g++) {
-    for (let b = 0; b < 32; b++) {
-      colors = colors.push({ r, g, b });
+export const createColors = () => {
+  //colors will hold all the colors
+  let colors = [];
+  //colorNumber will be the key for object creation purpose only
+  let colorNumber = 0;
+
+  //Iterating for Red factor
+  for (let r = 8; r <= 256; r += 8) {
+    //Iterating for Green factor
+    for (let g = 8; g <= 256; g += 8) {
+      //Iterating for Blue factor
+      for (let b = 8; b <= 256; b += 8) {
+        //Putting new color into the colors
+        colors[colorNumber] = { r, b, g };
+        colorNumber++;
+      }
     }
   }
-}
+
+  return colors;
+};
