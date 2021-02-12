@@ -4,7 +4,13 @@ import { createColors } from "./services/createColors";
 import "./App.css";
 
 class App extends Component {
-  state = { colors: createColors() };
+  state = {};
+
+  constructor() {
+    super();
+    this.state = { colors: createColors() };
+  }
+
   render() {
     let w = 100;
 
